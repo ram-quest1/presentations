@@ -1,28 +1,18 @@
-# Reveal.js Code Presentation Template
+# Design Patterns 
 
-A clean, professional presentation template optimized for code examples. Each slide is a separate markdown file for easy editing and organization.
+Presentation created using revealjs
 
 ## Project Structure
 
 ```
-revealjs-presentation/
+root/
 ├── index.html          # Main presentation file
 ├── theme.css           # Custom theme styling
 ├── README.md           # This file
 └── slides/             # Individual slide files
     ├── 01-title.md
     ├── 02-agenda.md
-    ├── 03-javascript-example.md
-    ├── 04-line-highlighting.md
-    ├── 05-side-by-side.md
-    ├── 06-key-takeaway.md
-    ├── 07a-multi-language-typescript.md
-    ├── 07b-multi-language-rust.md
-    ├── 07c-multi-language-go.md
-    ├── 08-terminal-commands.md
-    ├── 09-configuration.md
-    ├── 10-markdown-features.md
-    └── 11-closing.md
+    ├── .....
 ```
 
 ## Quick Start
@@ -41,15 +31,6 @@ revealjs-presentation/
 2. Open `http://localhost:8000` in your browser
 3. Use arrow keys or swipe to navigate
 
-## Features
-
-- **Modular slides** - Each slide in its own markdown file
-- **Left-aligned code** - Professional, readable code blocks
-- **Dark theme** - Easy on the eyes, great for code
-- **Syntax highlighting** - Atom One Dark theme
-- **Line highlighting** - Step through code with `[1|3-5|7]`
-- **Two-column layouts** - Compare before/after code
-- **Fragment animations** - Reveal content step by step
 
 ## Adding a New Slide
 
