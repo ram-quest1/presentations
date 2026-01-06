@@ -59,3 +59,7 @@ Every interpreter needs an **Environment** (a symbol table) to store variables d
 1. **Source Code:** A clean, documented Java project.
 2. **Test Suite:** Demonstrate your interpreter handling nested expressions like `(+ 1 (* 2 3))`.
 3. **Pattern Justification:** A brief README explaining why the Visitor pattern is preferable here over simple recursion inside the classes.
+
+--
+
+## [Helpful reading](https://gjdanis.github.io/2015/09/14/writing-a-simple-interpreter-cs/)
