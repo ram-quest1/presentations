@@ -4,8 +4,6 @@
 
 ---
 
-So you've landed your internship, and someone mentioned "Gradle" in a meeting. You nodded along, but inside you're wondering what on earth that is. Don't worry—we've all been there. This guide will walk you through creating your very first Java command line application using Gradle, step by step.
-
 ## What Even Is Gradle?
 
 Think of Gradle as your project's personal assistant. It handles all the boring stuff:
