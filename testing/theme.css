@@ -1,0 +1,252 @@
+/* ===== Professional Code Presentation Theme ===== */
+
+:root {
+    --bg-color: #1a1a2e;
+    --text-color: #eaeaea;
+    --heading-color: #ffffff;
+    --accent-color: #4fc3f7;
+    --code-bg: #0d1117;
+    --subtle-color: #888;
+}
+
+/* Background */
+.reveal-viewport {
+    background: var(--bg-color);
+    background-image: 
+        radial-gradient(ellipse at top, #16213e 0%, transparent 50%),
+        radial-gradient(ellipse at bottom, #1a1a2e 0%, transparent 50%);
+}
+
+/* Base Typography */
+.reveal {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 32px;
+    color: var(--text-color);
+}
+
+/* Left Alignment */
+.reveal .slides {
+    text-align: left;
+}
+
+.reveal .slides section {
+    text-align: left;
+}
+
+/* Headings */
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+    color: var(--heading-color);
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.reveal h1 { font-size: 2.5em; }
+.reveal h2 { font-size: 1.8em; }
+.reveal h3 { font-size: 1.3em; color: var(--accent-color); }
+
+/* Code Blocks */
+.reveal pre {
+    width: 100%;
+    margin: 1em 0;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.reveal pre code {
+    background: var(--code-bg);
+    padding: 1.2em 1.5em;
+    border-radius: 12px;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.7em;
+    line-height: 1.5;
+    max-height: 500px;
+}
+
+.reveal code {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+/* Inline Code */
+.reveal p code, .reveal li code {
+    background: rgba(79, 195, 247, 0.15);
+    color: var(--accent-color);
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    font-size: 0.85em;
+}
+
+/* Links */
+.reveal a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.reveal a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+.reveal ul, .reveal ol {
+    display: block;
+    margin-left: 1em;
+}
+
+.reveal li {
+    margin: 0.5em 0;
+    line-height: 1.4;
+}
+
+/* Slide Number */
+.reveal .slide-number {
+    background: transparent;
+    color: var(--subtle-color);
+    font-size: 14px;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* Progress Bar */
+.reveal .progress {
+    height: 3px;
+    background: rgba(255,255,255,0.1);
+}
+
+.reveal .progress span {
+    background: var(--accent-color);
+}
+
+/* Title Slide - Centered */
+.title-slide {
+    text-align: center !important;
+}
+
+.title-slide h1 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+    text-align: center !important;
+}
+
+.title-slide h2 {
+    color: var(--accent-color);
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 2em;
+    text-align: center !important;
+}
+
+.title-slide p {
+    color: var(--subtle-color);
+    font-size: 0.8em;
+    text-align: center !important;
+}
+
+/* Two Column Layout */
+.columns {
+    display: flex;
+    gap: 2em;
+}
+
+.columns > * {
+    flex: 1;
+}
+
+/* Blockquote / Highlight Box */
+.reveal blockquote {
+    background: rgba(79, 195, 247, 0.1);
+    border-left: 4px solid var(--accent-color);
+    padding: 1em 1.5em;
+    border-radius: 0 8px 8px 0;
+    margin: 1em 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-style: normal;
+}
+
+.reveal blockquote p {
+    margin: 0;
+}
+
+/* Fragment Animations */
+.reveal .fragment.fade-up {
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.reveal .fragment.fade-up.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Text Utilities */
+.small { font-size: 0.7em; }
+.subtle { color: var(--subtle-color); }
+
+/* Controls */
+.reveal .controls {
+    color: var(--accent-color);
+}
+
+/* Text Emphasis */
+.reveal strong {
+    color: var(--accent-color);
+}
+
+.reveal em {
+    color: var(--subtle-color);
+    font-style: italic;
+}
+
+/* Horizontal Rule */
+.reveal hr {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin: 1.5em 0;
+}
+
+/* Scrollable Slide */
+.scrollable {
+    height: 100%;
+    overflow-y: auto !important;
+    padding-right: 20px;
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.05);
+    border-radius: 4px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 4px;
+}
+
+.scrollable::-webkit-scrollbar-thumb:hover {
+    background: #81d4fa;
+}
+
+/* Table styling */
+.reveal table {
+    margin: 1em 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.reveal table th,
+.reveal table td {
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 0.5em 1em;
+    text-align: left;
+}
+
+.reveal table th {
+    background: rgba(79, 195, 247, 0.15);
+    color: var(--accent-color);
+}

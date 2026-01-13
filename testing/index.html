@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Presentation</title>
+
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css">
+
+    <!-- Highlight.js theme for code -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+
+    <!-- Custom Theme -->
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Title Slide -->
+            <section data-markdown="slides/01-title.md" class="title-slide"></section>
+
+            <!-- Agenda -->
+            <section data-markdown="slides/02-agenda.md"></section>
+
+            <section data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\r?\n--\r?\n$"
+                data-markdown="slides/03-what-is.md"></section>
+
+            <section data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\r?\n--\r?\n$"
+                data-markdown="slides/04-types-of.md"></section>
+
+            <section data-markdown="slides/05-unit.md" data-separator="^\r?\n---\r?\n$"
+                data-separator-vertical="^\r?\n--\r?\n$"></section>
+
+            <section data-markdown="slides/06-integration.md" data-separator="^\r?\n---\r?\n$"
+                data-separator-vertical="^\r?\n--\r?\n$"></section>
+
+            <section data-markdown="slides/07-mockery.md" data-separator="^\r?\n---\r?\n$"
+                data-separator-vertical="^\r?\n--\r?\n$"></section>
+
+            <section data-markdown="slides/08-sdlc.md" data-separator="^\r?\n---\r?\n$"
+                data-separator-vertical="^\r?\n--\r?\n$"></section>
+
+            <section data-markdown="slides/09-bdd.md" data-separator="^\r?\n---\r?\n$"
+                data-separator-vertical="^\r?\n--\r?\n$"></section>
+
+            <section data-markdown="slides/10-guidelines.md" data-separator="^\r?\n---\r?\n$"
+                data-separator-vertical="^\r?\n--\r?\n$"></section>
+
+            <section data-markdown="slides/11-end.md" data-separator="^\r?\n---\r?\n$"
+                data-separator-vertical="^\r?\n--\r?\n$"></section>
+
+        </div>
+    </div>
+
+    <!-- Reveal.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.js"></script>
+
+    <!-- Reveal.js Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/highlight/highlight.min.js"></script>
+
+    <script>
+        Reveal.initialize({
+            // Display settings
+            width: 1280,
+            height: 720,
+            margin: 0.1,
+
+            // Navigation
+            hash: true,
+            history: true,
+            keyboard: true,
+            touch: true,
+
+            // Appearance
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+
+            // Features
+            slideNumber: 'c/t',
+            showSlideNumber: 'all',
+            progress: true,
+            center: false,
+
+            // Code highlighting
+            highlight: {
+                highlightOnLoad: true
+            },
+
+            // Plugins
+            plugins: [RevealMarkdown, RevealHighlight]
+        });
+    </script>
+</body>
+
+</html>
